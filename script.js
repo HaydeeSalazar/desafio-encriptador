@@ -1,0 +1,41 @@
+function encriptar(){
+    var frase = document.getElementById("input").value.toLowerCase();
+
+    debugger
+    var textoEncriptado = frase.replace('e', "enter");
+    //1.Cuando vuelves a declarar textoEncriptado PIERDES la variable
+    //2.Tienes que hacer el replace obre tu variable que va cambiando
+    textoEncriptado = textoEncriptado.replace('i', "imes");
+    textoEncriptado = textoEncriptado.replace('a', "ai");
+    textoEncriptado = textoEncriptado.replace('o', "ober");
+    textoEncriptado = textoEncriptado.replace('u', "ufat");
+
+    document.getElementById("resultado").value = textoEncriptado;
+}
+
+
+function desencriptar(){
+    var frase = document.getElementById("input").value.toLowerCase();
+
+    debugger
+    //gatoiber
+    var textoEncriptado = frase.replace("enter",'e');
+    //1.Cuando vuelves a declarar textoEncriptado PIERDES la variable
+    //2.Tienes que hacer el replace obre tu variable que va cambiando
+    textoEncriptado = textoEncriptado.replace("imes",'i');
+    textoEncriptado = textoEncriptado.replace("ai",'a');
+    textoEncriptado = textoEncriptado.replace( "ober",'o');
+    textoEncriptado = textoEncriptado.replace( "ufat",'u');
+
+    document.getElementById("resultado").value = textoEncriptado;
+}
+
+function copy(){
+    
+    const textoResultado = document.getElementById("resultado").value;
+    //El navigator es un objeto que hace referencia al navegador en el cual estamos trabajando
+    //El objeto navegador TIENE una propiedad que se llama clipboard (portapapeles)
+    //El objeto clipboard tiene un metodo que se llama writeText que es el que te permite guardar en el portapapeles
+    //del sistema que usas el texto que le mandes de parametros, en este caso textoResultado
+    navigator.clipboard.writeText(textoResultado);
+}
