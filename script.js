@@ -1,7 +1,8 @@
 function encriptar(){
+    
     var frase = document.getElementById("input").value.toLowerCase();
 
-    debugger
+    
     var textoEncriptado = frase.replace('e', "enter");
     //1.Cuando vuelves a declarar textoEncriptado PIERDES la variable
     //2.Tienes que hacer el replace obre tu variable que va cambiando
@@ -17,7 +18,7 @@ function encriptar(){
 function desencriptar(){
     var frase = document.getElementById("input").value.toLowerCase();
 
-    debugger
+    
     //gatoiber
     var textoEncriptado = frase.replace("enter",'e');
     //1.Cuando vuelves a declarar textoEncriptado PIERDES la variable
@@ -39,3 +40,24 @@ function copy(){
     //del sistema que usas el texto que le mandes de parametros, en este caso textoResultado
     navigator.clipboard.writeText(textoResultado);
 }
+
+document.getElementById("input").addEventListener('blur',(event)=>{
+    
+    var input = document.getElementById("input");
+    if(input.value!=""){
+        //En este caso, la caja de texto no esta vacia
+        //Entonces, quitamos el background para que no estorbe
+        input.style.backgroundImage = "none";
+    }else{
+        //En caso de que la caja de texto SÍ venga vacía
+        //Ponemos de nuevo la imagen
+        input.style.backgroundImage="url('assets/img/png/fondo-texto.png')";
+    }
+} );
+
+document.getElementById("input").addEventListener('focus',(event)=>{
+    
+
+        input.style.backgroundImage = "none";
+
+});
