@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
-    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Cifrado</title>
 </head>
 <body>
-    <input type="text" id="input">
-    <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
-    <button type="button" onclick="encriptar()" id="botonEncriptador">Encriptar</button>
-    <button type="button" onclick="desencriptar()" id="botonDesencriptador">Desencriptar</button>
-    <button type="button" onclick="copy()" id="botonCopiar">Copiar</button>
+    <div class="container-content">
+        <div>
+            <img src="assets/img/png/Logo.png" alt="">
+        </div>
+        <div>
+            <textarea name="resultado" id="resultado" cols="30" rows="10" readonly>
+                
+            </textarea>
+        </div>
+        <div class="container-button">
+            <button type="button" onclick="encriptar()" id="botonEncriptador" class="btn-principal">
+                Encriptar
+            </button>
+            <button type="button" onclick="desencriptar()" id="botonDesencriptador" class="btn-comun">Desencriptar</button>
+            <button type="button" class="fa fa-copy btn-icon" onclick="copy()" id="botonCopiar"></button>
+        </div>
+        
+        
+    </div>
+    <div class="container-input">
+        <textarea id="input" "></textarea>
+    </div>
+
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>

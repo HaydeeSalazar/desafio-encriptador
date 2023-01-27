@@ -1,0 +1,159 @@
+/* Background del documento */
+body{
+    display: flex;
+    background: #f7f2ff;
+    justify-content: space-around;
+}
+
+.container-input{
+    
+}
+
+.container-content{
+
+}
+
+.container-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Boton Encriptar  */
+.btn-principal{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+gap: 8px;
+
+
+
+/* Dark blue/dark-blue-300 */
+
+background-color: #0A3871;
+border-radius: 24px;
+
+
+
+/* Fuente */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* Para cambiar color de las letras, es con color */
+color:#D8DFE8;
+justify-content:center;
+}
+
+
+.btn-principal:hover{
+    background-color: rgb(14, 82, 165);
+}
+
+.btn-principal:active{
+    background-color: #0A3871;
+}
+
+
+.btn-comun{
+/* Button */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+gap: 8px;
+
+
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: none;
+border-radius: 24px;
+
+
+
+justify-content:center;
+
+
+
+}
+
+#input{
+    /* Rectangle 1 */
+
+/* Las posiciones absolutas no se usan nunca, salvo para contenedores flotantes */
+/* position: absolute; */
+width: 400px;
+height: 90vh;
+left: 1000px;
+top: 40px;
+
+/* White */
+padding-top: 5vh;
+padding-bottom: 5vh;
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+
+resize:none;
+
+background-image: url('assets/img/png/fondo-texto.png');
+background-size: contain;
+background-repeat: no-repeat
+}
+
+
+
+#resultado{
+    /* Rectangle 1 */
+
+/* Las posiciones absolutas no se usan nunca, salvo para contenedores flotantes */
+/* position: absolute; */
+padding-top: 5vh;
+padding-bottom: 5vh;
+height: 70vh;
+
+
+/* White */
+
+
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+
+resize:none;
+}
+
+.btn-icon{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.btn-icon:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-icon:active{
+    background-color: rgb(204, 204, 204);
+}
+
+
